@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="lv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lingua Vera — Langue Universelle</title>
+<meta name="description" content="Lingua Vera est une langue universelle construite sur les racines partagées de toutes les familles linguistiques du monde.">
+<meta property="og:title" content="Lingua Vera — Langue Universelle">
+<meta property="og:description" content="Une langue pour tous, née des racines du monde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+<!--
+  LINGUA VERA — Langue universelle open source
+  Licence : Creative Commons CC BY-SA 4.0
+  https://creativecommons.org/licenses/by-sa/4.0/
+  
+  Le dictionnaire est chargé depuis dictionnaire.json
+  Pour ajouter un mot : modifier dictionnaire.json et ouvrir une Pull Request sur GitHub.
+-->
+<style>
+:root {
+  --bg:#0d0d0b;--bg2:#141410;--bg3:#1c1c18;
+  --gold:#c9a84c;--gold2:#e8c97a;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.3);
+  --text:#e8e4d8;--text2:#a09880;--text3:#5a5448;
+  --teal:#4db89a;--coral:#d4765a;--purple:#9b7fc4;--blue:#6aabcc;--green:#7ab87a;
+  --serif:'Cormorant Garamond',Georgia,serif;--mono:'DM Mono',monospace;--sans:'Noto Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 2.5rem;background:rgba(13,13,11,0.88);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--gold-border);}
+.nav-logo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--gold);text-decoration:none;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:0.75rem;color:var(--text2);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--gold);}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(201,168,76,0.06) 0%,transparent 70%),radial-gradient(ellipse 40% 30% at 20% 70%,rgba(77,184,154,0.04) 0%,transparent 60%);pointer-events:none;}
+.hero-rings{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0.12;}
+.ring{position:absolute;border-radius:50%;border:0.5px solid var(--gold);animation:pulse 8s ease-in-out infinite;}
+.ring:nth-child(1){width:300px;height:300px;}
+.ring:nth-child(2){width:500px;height:500px;animation-delay:1.5s;}
+.ring:nth-child(3){width:700px;height:700px;animation-delay:3s;}
+.ring:nth-child(4){width:900px;height:900px;animation-delay:4.5s;}
+@keyframes pulse{0%,100%{opacity:0.3;transform:scale(1);}50%{opacity:0.08;transform:scale(1.02);}}
+
+.hero-eyebrow{font-family:var(--mono);font-size:0.7rem;color:var(--gold);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:2rem;opacity:0;animation:fadeUp 1s 0.3s forwards;}
+.hero-title{font-family:var(--serif);font-size:clamp(4rem,12vw,9rem);font-weight:300;line-height:0.9;margin-bottom:1rem;opacity:0;animation:fadeUp 1s 0.5s forwards;}
+.hero-title em{font-style:italic;color:var(--gold);}
+.hero-subtitle{font-family:var(--serif);font-size:clamp(1rem,2.5vw,1.5rem);font-weight:300;font-style:italic;color:var(--text2);margin-bottom:3rem;opacity:0;animation:fadeUp 1s 0.7s forwards;}
+.hero-poem{max-width:560px;font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--text2);line-height:2;margin-bottom:3.5rem;padding:2rem;border-left:1px solid var(--gold-border);text-align:left;opacity:0;animation:fadeUp 1s 0.9s forwards;}
+.hero-poem strong{color:var(--gold);font-style:normal;font-weight:400;}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp 1s 1.1s forwards;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+.btn{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.9rem 2rem;border-radius:2px;text-decoration:none;transition:all 0.2s;cursor:pointer;border:none;display:inline-block;}
+.btn-primary{background:var(--gold);color:var(--bg);}
+.btn-primary:hover{background:var(--gold2);}
+.btn-secondary{background:transparent;color:var(--gold);border:0.5px solid var(--gold-border);}
+.btn-secondary:hover{border-color:var(--gold);background:var(--gold-dim);}
+
+section{padding:6rem 2rem;max-width:1100px;margin:0 auto;}
+.section-label{font-family:var(--mono);font-size:0.65rem;color:var(--gold);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:1rem;}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;line-height:1.15;margin-bottom:2rem;}
+.section-title em{font-style:italic;color:var(--gold);}
+.divider{width:60px;height:0.5px;background:var(--gold);margin:2rem 0;opacity:0.4;}
+
+.families-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--gold-border);border:0.5px solid var(--gold-border);margin-top:3rem;}
+.family-cell{background:var(--bg2);padding:2rem 1.5rem;transition:background 0.2s;}
+.family-cell:hover{background:var(--bg3);}
+.family-dot{width:8px;height:8px;border-radius:50%;margin-bottom:1rem;}
+.family-cell h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:0.4rem;}
+.family-cell p{font-size:0.78rem;color:var(--text3);line-height:1.5;}
+.family-ex{font-family:var(--mono);font-size:0.7rem;color:var(--text3);margin-top:0.5rem;}
+
+.rules-section{background:var(--bg2);padding:6rem 2rem;}
+.rules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:3rem;}
+.rule-card{border:0.5px solid var(--gold-border);padding:1.8rem;background:var(--bg);position:relative;overflow:hidden;}
+.rule-card::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:var(--gold);opacity:0.4;}
+.rule-num{font-family:var(--mono);font-size:0.65rem;color:var(--text3);letter-spacing:0.15em;margin-bottom:0.8rem;}
+.rule-card h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--gold);margin-bottom:0.8rem;}
+.rule-ex{display:flex;align-items:baseline;gap:0.6rem;margin-bottom:0.4rem;}
+.rule-ex code{font-family:var(--mono);font-size:0.8rem;color:var(--gold2);background:var(--gold-dim);padding:2px 8px;border-radius:2px;}
+.rule-ex span{font-size:0.78rem;color:var(--text2);}
+
+.manifeste-section{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 50%,var(--bg) 100%);padding:8rem 2rem;text-align:center;}
+.manifeste-text{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:300;line-height:2.2;color:var(--text2);font-style:italic;max-width:800px;margin:0 auto;}
+.manifeste-text strong{color:var(--text);font-style:normal;font-weight:400;}
+.manifeste-text em{color:var(--gold);}
+.manifeste-source{font-family:var(--mono);font-size:0.7rem;color:var(--text3);letter-spacing:0.15em;margin-top:2.5rem;}
+
+.dict-controls{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin:2rem 0 1rem;}
+.dict-search{flex:1;min-width:200px;padding:0.7rem 1rem;background:var(--bg2);border:0.5px solid var(--gold-border);border-radius:2px;color:var(--text);font-family:var(--mono);font-size:0.8rem;outline:none;transition:border-color 0.2s;}
+.dict-search::placeholder{color:var(--text3);}
+.dict-search:focus{border-color:var(--gold);}
+.filter-pills{display:flex;gap:0.5rem;flex-wrap:wrap;}
+.pill{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border:0.5px solid var(--text3);border-radius:20px;background:transparent;color:var(--text3);cursor:pointer;transition:all 0.15s;}
+.pill:hover{border-color:var(--gold);color:var(--gold);}
+.pill.active{border-color:var(--gold);color:var(--bg);background:var(--gold);}
+.dict-count{font-family:var(--mono);font-size:0.7rem;color:var(--text3);margin-bottom:1rem;}
+.dict-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:rgba(201,168,76,0.1);}
+.dict-entry{background:var(--bg);padding:1.4rem 1.5rem;transition:background 0.15s;border-top:0.5px solid rgba(201,168,76,0.08);}
+.dict-entry:hover{background:var(--bg2);}
+.entry-word{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--gold);line-height:1;margin-bottom:0.3rem;}
+.entry-meaning{font-size:0.85rem;color:var(--text);margin-bottom:0.6rem;}
+.entry-meta{display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;}
+.tag{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.08em;padding:2px 7px;border-radius:20px;}
+.tag-nom{background:rgba(106,171,204,0.15);color:var(--blue);}
+.tag-verbe{background:rgba(122,184,122,0.15);color:var(--green);}
+.tag-adj{background:rgba(212,118,90,0.15);color:var(--coral);}
+.tag-base{background:rgba(90,84,72,0.3);color:var(--text2);}
+.tag-comp{background:rgba(155,127,196,0.15);color:var(--purple);}
+.tag-prenom{background:rgba(201,168,76,0.15);color:var(--gold);}
+.tag-fam{background:transparent;border:0.5px solid var(--text3);color:var(--text3);}
+.entry-etym{font-size:0.72rem;color:var(--text3);font-style:italic;margin-top:0.5rem;line-height:1.4;}
+.dict-loading{font-family:var(--mono);font-size:0.8rem;color:var(--text3);padding:2rem 0;}
+
+.os-section{padding:6rem 2rem;max-width:1100px;margin:0 auto;}
+.os-card{border:0.5px solid var(--gold-border);padding:3rem;background:var(--bg2);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.os-card h2{font-family:var(--serif);font-size:2.2rem;font-weight:300;margin-bottom:1rem;}
+.os-card h2 em{font-style:italic;color:var(--gold);}
+.os-card p{font-size:0.9rem;color:var(--text2);line-height:1.8;margin-bottom:1.5rem;}
+.os-license{font-family:var(--mono);font-size:0.72rem;color:var(--text3);background:var(--bg);padding:1rem 1.2rem;border-left:2px solid var(--gold);line-height:1.7;}
+.os-license strong{color:var(--gold);}
+.contribute-list{list-style:none;display:flex;flex-direction:column;gap:1rem;}
+.contribute-list li{display:flex;gap:1rem;align-items:flex-start;font-size:0.88rem;color:var(--text2);}
+.contribute-list li::before{content:'→';color:var(--gold);font-family:var(--mono);flex-shrink:0;margin-top:2px;}
+
+footer{border-top:0.5px solid var(--gold-border);padding:2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-logo{font-family:var(--serif);font-size:1.1rem;color:var(--gold);}
+.footer-copy{font-family:var(--mono);font-size:0.65rem;color:var(--text3);letter-spacing:0.1em;}
+.footer-cc{font-family:var(--mono);font-size:0.65rem;color:var(--text3);text-decoration:none;border-bottom:0.5px solid var(--text3);transition:color 0.2s;}
+.footer-cc:hover{color:var(--gold);border-color:var(--gold);}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:680px){
+  nav{padding:1rem 1.2rem;}
+  .nav-links{gap:1rem;}
+  .nav-links a{font-size:0.65rem;}
+  .os-card{grid-template-columns:1fr;gap:2rem;padding:1.8rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#hero">Lingua Vera</a>
+  <ul class="nav-links">
+    <li><a href="#familles">Familles</a></li>
+    <li><a href="#regles">Règles</a></li>
+    <li><a href="#dictionnaire">Dictionnaire</a></li>
+    <li><a href="#opensource">Contribuer</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-rings">
+    <div class="ring"></div><div class="ring"></div>
+    <div class="ring"></div><div class="ring"></div>
+  </div>
+  <p class="hero-eyebrow">Lingua Universalis · CC BY-SA 4.0</p>
+  <h1 class="hero-title">Lingua<br><em>Vera</em></h1>
+  <p class="hero-subtitle">Une langue pour tous, née des racines du monde</p>
+  <div class="hero-poem">
+    <strong>No tempus bona maga ka tempus —</strong><br>
+    dami vita-luma al resta de ma vita.<br>
+    De tempus maga-ed, sa pari soni no-zen,<br>
+    tala una meloda ki-obseda.<br><br>
+    <em>Il n'y a pas de meilleur moment que ce moment —<br>
+    donner la lumière de vie au reste de ma vie.</em>
+  </div>
+  <div class="hero-cta">
+    <a href="#dictionnaire" class="btn btn-primary">Explorer le dictionnaire</a>
+    <a href="#opensource" class="btn btn-secondary">Contribuer</a>
+  </div>
+</div>
+
+<section id="familles">
+  <p class="section-label reveal">Fondations</p>
+  <h2 class="section-title reveal">5 familles,<br><em>une voix</em></h2>
+  <div class="divider reveal"></div>
+  <p class="reveal" style="color:var(--text2);max-width:580px;font-size:0.95rem;">Chaque mot de Lingua Vera est choisi selon sa racine la plus partagée entre les grandes familles linguistiques de l'humanité.</p>
+  <div class="families-grid reveal">
+    <div class="family-cell"><div class="family-dot" style="background:var(--blue)"></div><h3>Indo-européen</h3><p>Latin, sanskrit, persan, grec, slave.</p><div class="family-ex">Latin · Sanskrit · Persan · Grec</div></div>
+    <div class="family-cell"><div class="family-dot" style="background:var(--purple)"></div><h3>Sino-tibétain</h3><p>Mandarin, cantonais, tibétain.</p><div class="family-ex">Mandarin · Cantonais · Japonais</div></div>
+    <div class="family-cell"><div class="family-dot" style="background:var(--green)"></div><h3>Bantu / Africain</h3><p>Swahili, yoruba, zulu, xhosa.</p><div class="family-ex">Swahili · Yoruba · Zulu · Xhosa</div></div>
+    <div class="family-cell"><div class="family-dot" style="background:var(--gold)"></div><h3>Sémitique</h3><p>Arabe, hébreu, amharique.</p><div class="family-ex">Arabe · Hébreu · Amharique</div></div>
+    <div class="family-cell"><div class="family-dot" style="background:var(--coral)"></div><h3>Dravidien</h3><p>Tamil, telugu, kannada, sanskrit.</p><div class="family-ex">Tamil · Telugu · Kannada</div></div>
+  </div>
+</section>
+
+<div class="rules-section" id="regles">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p class="section-label reveal">Grammaire</p>
+    <h2 class="section-title reveal">Simple.<br><em>Logique. Universel.</em></h2>
+    <div class="divider reveal"></div>
+    <div class="rules-grid reveal">
+      <div class="rule-card"><div class="rule-num">01 · Sons</div><h3>Phonologie pure</h3><div class="rule-ex"><code>a e i o u</code><span>voyelles</span></div><div class="rule-ex"><code>b d f k l m n p r s t v z</code><span>consonnes</span></div></div>
+      <div class="rule-card"><div class="rule-num">02 · Temps</div><h3>Passé · Présent · Futur</h3><div class="rule-ex"><code>ami</code><span>j'aime</span></div><div class="rule-ex"><code>ami-ed</code><span>j'aimais</span></div><div class="rule-ex"><code>ami-an</code><span>j'aimerai</span></div></div>
+      <div class="rule-card"><div class="rule-num">03 · Structure</div><h3>Pluriel · Négation</h3><div class="rule-ex"><code>-i</code><span>pluriel</span></div><div class="rule-ex"><code>no-</code><span>négation</span></div><div class="rule-ex"><code>ka-</code><span>question</span></div></div>
+      <div class="rule-card"><div class="rule-num">04 · Composés</div><h3>Mots composés</h3><div class="rule-ex"><code>vita-luma</code><span>lumière de vie</span></div><div class="rule-ex"><code>tera-domi</code><span>monde habité</span></div></div>
+      <div class="rule-card"><div class="rule-num">05 · Prénoms</div><h3>Traduction sémantique</h3><div class="rule-ex"><code>nova-vita</code><span>Jean</span></div><div class="rule-ex"><code>veni-sol</code><span>José</span></div><div class="rule-ex"><code>maris</code><span>Marie</span></div></div>
+      <div class="rule-card"><div class="rule-num">06 · Règle d'or</div><h3>Priorité universelle</h3><p style="font-size:0.82rem;color:var(--text2);line-height:1.7;">Le mot retenu est celui dont la racine est partagée par le plus grand nombre de familles linguistiques.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="manifeste-section">
+  <p class="section-label reveal" style="text-align:center;">Premier texte fondateur</p>
+  <div class="manifeste-text reveal">
+    <strong>No tempus bona maga ka tempus</strong> —<br>
+    dami <em>vita-luma</em> al resta de ma vita.<br>
+    De tempus maga-ed, sa pari soni no-zen,<br>
+    tala una meloda <em>ki-obseda</em>.<br><br>
+    Ka ma vidi-ed vera de ma karma,<br>
+    ma <em>tera-domi</em> sa movi-ed al nul.<br>
+    Ma soli-ed, no ntu vera al ubuntu-domi.<br>
+    Ma vidi-ed ma ntu prisonus —<br>
+    entre <em>tera-fina</em> e prisonus-domi.<br>
+    In ma sol-domi, no mina luma de tama<br>
+    in ombra de ma karma.
+  </div>
+  <p class="manifeste-source reveal">Premier texte fondateur de Lingua Vera · 2025</p>
+</div>
+
+<section id="dictionnaire">
+  <p class="section-label reveal">Lexique</p>
+  <h2 class="section-title reveal">Le <em>dictionnaire</em></h2>
+  <div class="divider reveal"></div>
+  <div class="dict-controls reveal">
+    <input class="dict-search" type="text" id="search" placeholder="Chercher un mot..." oninput="filterDict()">
+    <div class="filter-pills">
+      <button class="pill active" onclick="setFilter('all',this)">Tout</button>
+      <button class="pill" onclick="setFilter('nom',this)">Noms</button>
+      <button class="pill" onclick="setFilter('verbe',this)">Verbes</button>
+      <button class="pill" onclick="setFilter('adj',this)">Adjectifs</button>
+      <button class="pill" onclick="setFilter('base',this)">Bases</button>
+      <button class="pill" onclick="setFilter('comp',this)">Composés</button>
+      <button class="pill" onclick="setFilter('prenom',this)">Prénoms</button>
+    </div>
+  </div>
+  <div class="dict-count" id="dict-count"></div>
+  <div class="dict-grid" id="dict-grid"><div class="dict-loading">Chargement du dictionnaire...</div></div>
+</section>
+
+<div class="os-section" id="opensource">
+  <div class="os-card reveal">
+    <div>
+      <p class="section-label">Open Source</p>
+      <h2><em>Libre</em> pour tous</h2>
+      <p>Lingua Vera appartient à l'humanité. Ce projet est publié sous licence Creative Commons — tu peux librement l'utiliser, le partager, le modifier, tant que tu cites la source et partages sous la même licence.</p>
+      <div class="os-license">
+        <strong>CC BY-SA 4.0</strong><br>
+        Creative Commons Attribution ShareAlike<br>
+        4.0 International<br><br>
+        Copier · Adapter · Redistribuer<br>
+        Citer la source · Même licence
+      </div>
+    </div>
+    <div>
+      <p class="section-label">Comment contribuer</p>
+      <ul class="contribute-list">
+        <li>Propose un nouveau mot avec ses racines dans plusieurs familles linguistiques via GitHub</li>
+        <li>Traduis des textes ou proverbes de ta langue maternelle vers Lingua Vera</li>
+        <li>Identifie des racines plus universelles pour des mots existants</li>
+        <li>Crée du contenu : poèmes, chansons, histoires en Lingua Vera</li>
+        <li>Partage la langue avec des communautés linguistiques du monde entier</li>
+      </ul>
+      <br>
+      <a href="https://github.com" class="btn btn-secondary" target="_blank">Voir sur GitHub</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Lingua Vera</div>
+  <div class="footer-copy">Une langue universelle · Née des racines du monde</div>
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="footer-cc" target="_blank">CC BY-SA 4.0</a>
+</footer>
+
+<script>
+const famLabels={multi:'Universel',indo:'Indo-europ.',sino:'Sino-tibétain',bantu:'Bantu/Afr.',semit:'Sémitique',drav:'Dravidien'};
+let allWords=[], currentFilter='all';
+
+async function loadDict(){
+  try {
+    const r = await fetch('dictionnaire.json');
+    allWords = await r.json();
+    filterDict();
+  } catch(e) {
+    document.getElementById('dict-grid').innerHTML='<div class="dict-loading" style="color:#c04">Erreur de chargement du dictionnaire.</div>';
+  }
+}
+
+function setFilter(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('.pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterDict();
+}
+
+function filterDict(){
+  const q=(document.getElementById('search').value||'').toLowerCase();
+  const rows=allWords.filter(d=>{
+    const matchCat=currentFilter==='all'||d.cat===currentFilter;
+    const matchQ=!q||d.lv.includes(q)||d.fr.toLowerCase().includes(q)||(d.etym||'').toLowerCase().includes(q);
+    return matchCat&&matchQ;
+  });
+  document.getElementById('dict-count').textContent=rows.length+' mot'+(rows.length!==1?'s':'');
+  document.getElementById('dict-grid').innerHTML=rows.map(d=>`
+    <div class="dict-entry">
+      <div class="entry-word">${d.lv}</div>
+      <div class="entry-meaning">${d.fr}</div>
+      <div class="entry-meta">
+        <span class="tag tag-${d.cat}">${d.cat}</span>
+        <span class="tag tag-fam">${famLabels[d.fam]||d.fam}</span>
+      </div>
+      <div class="entry-etym">${d.etym||''}</div>
+    </div>
+  `).join('');
+}
+
+loadDict();
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
