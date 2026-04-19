@@ -1,7 +1,7 @@
 # Lingua Vera 🌍
 
 > *No tempus bona maga ka tempus — dami vita-luma al resta de ma vita.*
-> *Il n'y a pas de meilleur moment que ce moment — donner la lumière de vie au reste de ma vie.*
+> *Il n'y a pas de meilleur moment que ce moment — donner la lumière de vie au reste de ma vie .*
 
 **Lingua Vera** est une langue universelle construite sur les racines partagées des grandes familles linguistiques du monde : indo-européen, sino-tibétain, bantu/africain, sémitique et dravidien.
 
