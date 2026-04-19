@@ -1,75 +1,98 @@
-# Lingua Vera 🌍
+# 🌍 Lingua Vera
 
-> *No tempus bona maga ka tempus — dami vita-luma al resta de ma vita.*
-> *Il n'y a pas de meilleur moment que ce moment — donner la lumière de vie au reste de ma vie .*
+**Une langue universelle construite sur les racines partagées de l'humanité.**
 
-**Lingua Vera** est une langue universelle construite sur les racines partagées des grandes familles linguistiques du monde : indo-européen, sino-tibétain, bantu/africain, sémitique et dravidien.
-
----
-
-## Principes fondateurs
-
-- **Sons simples** : a, e, i, o, u · b, d, f, k, l, m, n, p, r, s, t, v, z
-- **Grammaire logique** : passé (-ed), présent (racine), futur (-an), pluriel (-i), négation (no-), question (ka-)
-- **Vocabulaire universel** : chaque mot est choisi selon la racine la plus partagée entre les familles linguistiques
-- **Prénoms sémantiques** : les prénoms sont traduits par leur sens profond, pas phonétiquement
+> *No tempus bona maga ka tempus* — Il n'y a pas de meilleur moment que ce moment.
 
 ---
 
-## Utiliser ce projet
+## Concept
 
-Le site complet est un **fichier HTML unique** — `index.html`.  
-Tu peux l'ouvrir directement dans n'importe quel navigateur, sans serveur, sans installation.
+Lingua Vera est une langue construite sur les racines partagées des **5 grandes familles linguistiques** :
+
+- 🌏 Indo-européen
+- 🌏 Sino-tibétain
+- 🌍 Bantu / Africain
+- 🌍 Sémitique
+- 🌏 Dravidien
+
+**Règle d'or** : le mot retenu est celui dont la racine est partagée par le plus de familles linguistiques.
+
+---
+
+## Grammaire
+
+| Règle | Forme |
+|---|---|
+| Sons autorisés | a e i o u · b d f k l m n p r s t v z |
+| Passé | suffixe **-ed** |
+| Présent | racine nue |
+| Futur | suffixe **-an** |
+| Pluriel | suffixe **-i** |
+| Négation | préfixe **no-** |
+| Question | préfixe **ka-** |
+| Adjectif | suffixe **-al** |
+| Mots composés | mot1**-**mot2 |
+| Prénoms | traduits sémantiquement (par leur sens profond) |
+
+---
+
+## Exemples de phrases
+
+| Lingua Vera | Français |
+|---|---|
+| Ma ami ta | Je t'aime |
+| Ka ta veni? | Tu viens ? |
+| Ma no-vidi | Je ne vois pas |
+| No tempus bona maga ka tempus | Il n'y a pas de meilleur moment que ce moment |
+
+---
+
+## Premier texte fondateur
+
+*No tempus bona maga ka tempus — dami vita-luma al resta de ma vita. De tempus maga-ed, sa pari soni no-zen, tala una meloda ki-obseda. Ka ma vidi-ed vera de ma karma, ma tera-domi sa movi-ed al nul. Sa veni-ed al tempus de ma vita — ka x-asa, in tera no-ubuntu, ma nova-vidi-ed. Ma soli-ed, no ntu vera al ubuntu-domi. Ma vidi-ed ma ntu prisonus — entre tera-fina e prisonus-domi. In ma sol-domi, no mina luma de tama in ombra de ma karma.*
+
+---
+
+## Dictionnaire
+
+Le dictionnaire complet est disponible dans [`dictionnaire.json`](./dictionnaire.json).
+
+Il contient actuellement **70+ entrées** : noms, verbes, adjectifs, bases, composés et prénoms.
+
+---
+
+## Prénoms traduits
+
+Les prénoms sont traduits **sémantiquement** — par leur sens profond, jamais phonétiquement.
+
+| Prénom original | Lingua Vera | Sens |
+|---|---|---|
+| Jose Maria | Veni-Sol Maris | Celui qui fait venir le soleil, de la mer |
+| Jean Marie | Nova-Vita Maris | Nouvelle vie, de la mer |
+| Elena | Luma-Sol | Lumière solaire |
+| Alexandre / Aleandro | Ntu-Kali-Domi | Gardien fort des êtres |
+| Jessica | Vidi-Vera | Celle qui voit avec clarté |
+| Nicolas | Nala-Ntu | Réussite pour les êtres |
+| Maeva | Bona-Veni | Bonne venue |
+| Evan | Dana-Vita | Don de vie |
+| Livia | Vita-Vera | Vraie vivante |
+| Timea | Nala-Tama | Réussite de l'âme |
+
+---
+
+## Projet
+
+- 🌐 **Site** : [papslutopiquerebelle-tech.github.io/lingua-vera](https://papslutopiquerebelle-tech.github.io/lingua-vera)
+- 📁 **Dépôt** : [github.com/papslutopiquerebelle-tech/lingua-vera](https://github.com/papslutopiquerebelle-tech/lingua-vera)
+- 📄 **Licence** : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ---
 
 ## Contribuer
 
-Lingua Vera appartient à l'humanité. Pour proposer un nouveau mot :
-
-1. **Fork** ce dépôt
-2. Ajoute ton mot dans `dictionnaire.json` avec sa racine étymologique dans plusieurs familles linguistiques
-3. Ouvre une **Pull Request** en expliquant pourquoi cette racine est universelle
-4. Le gardien de la langue examine et accepte ou refuse
-
-### Format d'un mot
-
-```json
-{
-  "lv": "vita",
-  "fr": "vie",
-  "cat": "nom",
-  "fam": "multi",
-  "etym": "vita (latin), uhai (swahili), jivan (sanskrit)"
-}
-```
-
-### Catégories
-- `nom` — nom commun
-- `verbe` — verbe
-- `adj` — adjectif
-- `base` — mot de base (pronoms, particules)
-- `comp` — mot composé
-- `prenom` — prénom traduit sémantiquement
-
-### Familles linguistiques
-- `multi` — racine universelle (plusieurs familles)
-- `indo` — indo-européen
-- `sino` — sino-tibétain
-- `bantu` — bantu / africain
-- `semit` — sémitique
-- `drav` — dravidien
+Pour mettre à jour le dictionnaire, modifier `dictionnaire.json` directement sur GitHub.
 
 ---
 
-## Licence
-
-**Creative Commons CC BY-SA 4.0**  
-Tu peux copier, modifier, redistribuer ce projet librement,  
-à condition de citer la source et de partager sous la même licence.
-
-[creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
----
-
-*Lingua Vera — Une langue pour tous, née des racines du monde.*
+*Lingua Vera — parce que toutes les langues partagent une même humanité.*

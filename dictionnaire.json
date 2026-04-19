@@ -1,64 +1,527 @@
 [
-  {"lv":"ma","fr":"je / moi","cat":"base","fam":"multi","etym":"Universel : mama, mi (japonais), mimi (swahili)"},
-  {"lv":"ta","fr":"tu / toi","cat":"base","fam":"multi","etym":"tu (latin), thou (anglais), ti (hindi)"},
-  {"lv":"sa","fr":"il / elle","cat":"base","fam":"multi","etym":"sa (sanskrit), tā (mandarin)"},
-  {"lv":"nosa","fr":"nous","cat":"base","fam":"multi","etym":"no- + sa · sisi (swahili), noi (italien)"},
-  {"lv":"tasi","fr":"vous","cat":"base","fam":"multi","etym":"ta + -i · ninyi (swahili)"},
-  {"lv":"sasi","fr":"ils / elles","cat":"base","fam":"multi","etym":"sa + -i · wao (swahili), tāmen (mandarin)"},
-  {"lv":"sol","fr":"soleil","cat":"nom","fam":"multi","etym":"sol (latin/esp.), surya (sanskrit), jua (swahili), shams (arabe)"},
-  {"lv":"luna","fr":"lune","cat":"nom","fam":"multi","etym":"luna (latin), mwezi (swahili)"},
-  {"lv":"akva","fr":"eau","cat":"nom","fam":"multi","etym":"aqua (latin), maji (swahili), ab (persan), neer (tamil)"},
-  {"lv":"tera","fr":"terre / monde","cat":"nom","fam":"multi","etym":"terra (latin), ardh (arabe), nchi (swahili)"},
-  {"lv":"vita","fr":"vie","cat":"nom","fam":"multi","etym":"vita (latin), uhai (swahili), jivan (sanskrit)"},
-  {"lv":"bona","fr":"bon / bien","cat":"adj","fam":"indo","etym":"bonus (latin), bhala (zulu)"},
-  {"lv":"mala","fr":"mauvais / mal","cat":"adj","fam":"multi","etym":"malus (latin), mbaya (swahili)"},
-  {"lv":"veni","fr":"venir","cat":"verbe","fam":"multi","etym":"venire (latin), kuja (swahili)"},
-  {"lv":"dami","fr":"donner","cat":"verbe","fam":"multi","etym":"*deh₃- PIE, kutoa (swahili), tā (mandarin)"},
-  {"lv":"vidi","fr":"voir / regarder","cat":"verbe","fam":"multi","etym":"videre (latin), *weid- PIE, kuona (swahili)"},
-  {"lv":"soni","fr":"entendre / son","cat":"verbe","fam":"indo","etym":"sonare (latin), kusikia (swahili)"},
-  {"lv":"ami","fr":"aimer","cat":"verbe","fam":"multi","etym":"amare (latin), kupenda (swahili), ài (mandarin)"},
-  {"lv":"pari","fr":"parler","cat":"verbe","fam":"multi","etym":"parler (fr), kusema (swahili)"},
-  {"lv":"movi","fr":"bouger","cat":"verbe","fam":"indo","etym":"movere (latin), move (anglais)"},
-  {"lv":"pani","fr":"nourriture / pain","cat":"nom","fam":"multi","etym":"panis (latin), chakula (swahili), pān (hindi)"},
-  {"lv":"domi","fr":"maison","cat":"nom","fam":"multi","etym":"domus (latin), nyumba (swahili), ghar (hindi)"},
-  {"lv":"tempus","fr":"temps / moment","cat":"nom","fam":"multi","etym":"tempus (latin), wakati (swahili), shí (mandarin)"},
-  {"lv":"nova","fr":"nouveau / neuf","cat":"adj","fam":"multi","etym":"novus (latin), mpya (swahili), naya (hindi)"},
-  {"lv":"maga","fr":"grand","cat":"adj","fam":"multi","etym":"magnus (latin), kubwa (swahili), dà (mandarin)"},
-  {"lv":"mina","fr":"petit","cat":"adj","fam":"multi","etym":"minimus (latin), ndogo (swahili), xiǎo (mandarin)"},
-  {"lv":"mare","fr":"mer / océan","cat":"nom","fam":"multi","etym":"mare (latin), bahari (swahili), bahr (arabe), kadal (tamil)"},
-  {"lv":"ntu","fr":"personne / être humain","cat":"nom","fam":"bantu","etym":"racine bantu *ntu → ubuntu, muntu, bantu"},
-  {"lv":"ubuntu","fr":"humanité / solidarité","cat":"nom","fam":"bantu","etym":"zulu/xhosa : je suis parce que nous sommes"},
-  {"lv":"ase","fr":"force / énergie vitale","cat":"nom","fam":"bantu","etym":"yoruba àṣẹ : force divine"},
-  {"lv":"tama","fr":"désir / âme / aspiration","cat":"nom","fam":"sino","etym":"japonais tama (âme, essence)"},
-  {"lv":"ki","fr":"énergie / souffle vital","cat":"nom","fam":"sino","etym":"mandarin qì, japonais ki"},
-  {"lv":"dana","fr":"don / générosité","cat":"nom","fam":"drav","etym":"sanskrit dāna, tamil danam"},
-  {"lv":"karma","fr":"action / conséquence","cat":"nom","fam":"drav","etym":"sanskrit karma (*kar- : faire)"},
-  {"lv":"nala","fr":"réussite / abondance","cat":"nom","fam":"bantu","etym":"swahili/zulu nala"},
-  {"lv":"zen","fr":"calme / paix intérieure","cat":"nom","fam":"sino","etym":"japonais zen ← chán ← sanskrit dhyāna"},
-  {"lv":"safi","fr":"propre / pur","cat":"adj","fam":"bantu","etym":"swahili safi"},
-  {"lv":"pendo","fr":"affection / tendresse","cat":"nom","fam":"bantu","etym":"swahili pendo"},
-  {"lv":"kali","fr":"fort / intense","cat":"adj","fam":"multi","etym":"swahili kali, kāla (sanskrit)"},
-  {"lv":"deva","fr":"divin / lumière céleste","cat":"nom","fam":"drav","etym":"sanskrit deva, tamil teyvam"},
-  {"lv":"zuri","fr":"beau / magnifique","cat":"adj","fam":"bantu","etym":"swahili zuri"},
-  {"lv":"luma","fr":"lueur / lumière intérieure","cat":"nom","fam":"multi","etym":"lumen (latin), nuru (swahili), guāng (mandarin)"},
-  {"lv":"ombra","fr":"ombre / obscurité","cat":"nom","fam":"multi","etym":"umbra (latin), kivuli (swahili), yǐn (mandarin)"},
-  {"lv":"soli","fr":"seul / solitaire","cat":"adj","fam":"multi","etym":"solus (latin), peke (swahili), dān (mandarin)"},
-  {"lv":"tala","fr":"comme / tel que","cat":"base","fam":"multi","etym":"tale (latin), kama (swahili), rú (mandarin)"},
-  {"lv":"meloda","fr":"mélodie / chant","cat":"nom","fam":"multi","etym":"melodia (grec/latin), wimbo (swahili), gē (mandarin)"},
-  {"lv":"prisonus","fr":"prisonnier / prison","cat":"nom","fam":"multi","etym":"prison (latin/fr), jela (swahili)"},
-  {"lv":"asa","fr":"fois / occurrence","cat":"nom","fam":"multi","etym":"vez (espagnol), mara (swahili), cì (mandarin)"},
-  {"lv":"resta","fr":"reste / ce qui demeure","cat":"nom","fam":"multi","etym":"restare (latin), baki (swahili)"},
-  {"lv":"fina","fr":"fin / terme","cat":"nom","fam":"multi","etym":"finis (latin), mwisho (swahili), jié (mandarin)"},
-  {"lv":"ante","fr":"avant / pré-","cat":"base","fam":"multi","etym":"ante (latin), qabl (arabe), kabla (swahili)"},
-  {"lv":"primus","fr":"premier / essentiel","cat":"adj","fam":"multi","etym":"primus (latin), kwanza (swahili), dì yī (mandarin)"},
-  {"lv":"maris","fr":"Marie / mer / pureté","cat":"prenom","fam":"semit","etym":"hébreu Maryam → latin mare"},
-  {"lv":"veni-sol","fr":"José","cat":"prenom","fam":"semit","etym":"hébreu Yosef (élever) → sol"},
-  {"lv":"nova-vita","fr":"Jean","cat":"prenom","fam":"semit","etym":"hébreu Yohanan (grâce divine)"},
-  {"lv":"vita-luma","fr":"lumière de vie / le meilleur","cat":"comp","fam":"multi","etym":"vita (vie) + luma (lumière)"},
-  {"lv":"tera-domi","fr":"monde / univers habité","cat":"comp","fam":"multi","etym":"tera (terre) + domi (maison)"},
-  {"lv":"tera-fina","fr":"tombe / fin de terre","cat":"comp","fam":"multi","etym":"tera (terre) + fina (fin)"},
-  {"lv":"nova-vidi","fr":"se réveiller / voir à nouveau","cat":"comp","fam":"multi","etym":"nova (nouveau) + vidi (voir)"},
-  {"lv":"ki-obseda","fr":"obsédant / qui hante","cat":"comp","fam":"multi","etym":"ki (énergie) + obseda (latin : assiéger)"},
-  {"lv":"tama-vita","fr":"conviction / croyance profonde","cat":"comp","fam":"multi","etym":"tama (âme) + vita (vie)"},
-  {"lv":"ante-primus","fr":"pré-prime / état originel","cat":"comp","fam":"multi","etym":"ante (avant) + primus (premier)"}
+  {
+    "lingua_vera": "ma",
+    "francais": "je / moi",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "mama, mi (japonais), mimi (swahili)"
+  },
+  {
+    "lingua_vera": "ta",
+    "francais": "tu / toi",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "tu (latin), thou (anglais), ti (hindi)"
+  },
+  {
+    "lingua_vera": "sa",
+    "francais": "il / elle",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "sa (sanskrit), tā (mandarin)"
+  },
+  {
+    "lingua_vera": "nosa",
+    "francais": "nous",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "no- + sa · sisi (swahili)"
+  },
+  {
+    "lingua_vera": "tasi",
+    "francais": "vous",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "ta + -i · ninyi (swahili)"
+  },
+  {
+    "lingua_vera": "sasi",
+    "francais": "ils / elles",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "sa + -i · wao (swahili)"
+  },
+  {
+    "lingua_vera": "sol",
+    "francais": "soleil",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "sol (latin), surya (sanskrit), jua (swahili)"
+  },
+  {
+    "lingua_vera": "luna",
+    "francais": "lune",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "luna (latin), mwezi (swahili)"
+  },
+  {
+    "lingua_vera": "akva",
+    "francais": "eau",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "aqua (latin), maji (swahili), neer (tamil)"
+  },
+  {
+    "lingua_vera": "tera",
+    "francais": "terre / monde",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "terra (latin), nchi (swahili)"
+  },
+  {
+    "lingua_vera": "vita",
+    "francais": "vie",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "vita (latin), uhai (swahili), jivan (sanskrit)"
+  },
+  {
+    "lingua_vera": "mare",
+    "francais": "mer / océan",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "mare (latin), bahari (swahili), bahr (arabe)"
+  },
+  {
+    "lingua_vera": "domi",
+    "francais": "maison",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "domus (latin), nyumba (swahili), ghar (hindi)"
+  },
+  {
+    "lingua_vera": "pani",
+    "francais": "nourriture / pain",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "panis (latin), chakula (swahili), pān (hindi)"
+  },
+  {
+    "lingua_vera": "tempus",
+    "francais": "temps / moment",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "tempus (latin), wakati (swahili), shí (mandarin)"
+  },
+  {
+    "lingua_vera": "meloda",
+    "francais": "mélodie / chant",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "melodia (grec), wimbo (swahili)"
+  },
+  {
+    "lingua_vera": "prisonus",
+    "francais": "prisonnier / prison",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "prison (latin), jela (swahili)"
+  },
+  {
+    "lingua_vera": "asa",
+    "francais": "fois / occurrence",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "vez (espagnol), mara (swahili)"
+  },
+  {
+    "lingua_vera": "resta",
+    "francais": "reste / ce qui demeure",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "restare (latin), baki (swahili)"
+  },
+  {
+    "lingua_vera": "fina",
+    "francais": "fin / terme",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "finis (latin), mwisho (swahili)"
+  },
+  {
+    "lingua_vera": "luma",
+    "francais": "lueur / lumière intérieure",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "lumen (latin), nuru (swahili)"
+  },
+  {
+    "lingua_vera": "ombra",
+    "francais": "ombre / obscurité",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "umbra (latin), kivuli (swahili)"
+  },
+  {
+    "lingua_vera": "ntu",
+    "francais": "personne / être humain",
+    "categorie": "nom",
+    "famille": "bantu",
+    "racine": "racine *ntu → ubuntu, bantu"
+  },
+  {
+    "lingua_vera": "ubuntu",
+    "francais": "humanité / solidarité",
+    "categorie": "nom",
+    "famille": "bantu",
+    "racine": "zulu : je suis parce que nous sommes"
+  },
+  {
+    "lingua_vera": "ase",
+    "francais": "force / énergie vitale",
+    "categorie": "nom",
+    "famille": "bantu",
+    "racine": "yoruba àṣẹ"
+  },
+  {
+    "lingua_vera": "nala",
+    "francais": "réussite / abondance",
+    "categorie": "nom",
+    "famille": "bantu",
+    "racine": "swahili/zulu nala"
+  },
+  {
+    "lingua_vera": "pendo",
+    "francais": "affection / tendresse",
+    "categorie": "nom",
+    "famille": "bantu",
+    "racine": "swahili pendo"
+  },
+  {
+    "lingua_vera": "tama",
+    "francais": "âme / désir / aspiration",
+    "categorie": "nom",
+    "famille": "sino",
+    "racine": "japonais tama"
+  },
+  {
+    "lingua_vera": "ki",
+    "francais": "énergie / souffle vital",
+    "categorie": "nom",
+    "famille": "sino",
+    "racine": "mandarin qì, japonais ki"
+  },
+  {
+    "lingua_vera": "zen",
+    "francais": "calme / paix intérieure",
+    "categorie": "nom",
+    "famille": "sino",
+    "racine": "japonais zen ← sanskrit dhyāna"
+  },
+  {
+    "lingua_vera": "dana",
+    "francais": "don / générosité",
+    "categorie": "nom",
+    "famille": "dravidien",
+    "racine": "sanskrit dāna, tamil dana"
+  },
+  {
+    "lingua_vera": "karma",
+    "francais": "action / conséquence",
+    "categorie": "nom",
+    "famille": "dravidien",
+    "racine": "sanskrit karma"
+  },
+  {
+    "lingua_vera": "deva",
+    "francais": "divin / lumière céleste",
+    "categorie": "nom",
+    "famille": "dravidien",
+    "racine": "sanskrit deva, tamil teyvam"
+  },
+  {
+    "lingua_vera": "pater",
+    "francais": "père",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "PIE *ph₂tḗr → latin pater, sanskrit pitā, grec patḗr, swahili baba"
+  },
+  {
+    "lingua_vera": "mater",
+    "francais": "mère",
+    "categorie": "nom",
+    "famille": "universel",
+    "racine": "PIE *méh₂tēr → latin mater, sanskrit mātā, grec mḗtēr, tamoul mātar"
+  },
+  {
+    "lingua_vera": "bona",
+    "francais": "bon / bien",
+    "categorie": "adjectif",
+    "famille": "indo-européen",
+    "racine": "bonus (latin), bhala (zulu)"
+  },
+  {
+    "lingua_vera": "mala",
+    "francais": "mauvais / mal",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "malus (latin), mbaya (swahili)"
+  },
+  {
+    "lingua_vera": "nova",
+    "francais": "nouveau",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "novus (latin), mpya (swahili)"
+  },
+  {
+    "lingua_vera": "maga",
+    "francais": "grand",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "magnus (latin), kubwa (swahili), dà (mandarin)"
+  },
+  {
+    "lingua_vera": "mina",
+    "francais": "petit",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "minimus (latin), ndogo (swahili)"
+  },
+  {
+    "lingua_vera": "vera",
+    "francais": "vrai / réel",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "vera (latin)"
+  },
+  {
+    "lingua_vera": "soli",
+    "francais": "seul / solitaire",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "solus (latin), peke (swahili)"
+  },
+  {
+    "lingua_vera": "safi",
+    "francais": "propre / pur",
+    "categorie": "adjectif",
+    "famille": "bantu",
+    "racine": "swahili safi"
+  },
+  {
+    "lingua_vera": "kali",
+    "francais": "fort / intense",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "swahili kali, kāla (sanskrit)"
+  },
+  {
+    "lingua_vera": "zuri",
+    "francais": "beau / magnifique",
+    "categorie": "adjectif",
+    "famille": "bantu",
+    "racine": "swahili zuri"
+  },
+  {
+    "lingua_vera": "primus",
+    "francais": "premier / essentiel",
+    "categorie": "adjectif",
+    "famille": "universel",
+    "racine": "primus (latin), kwanza (swahili)"
+  },
+  {
+    "lingua_vera": "veni",
+    "francais": "venir",
+    "categorie": "verbe",
+    "famille": "universel",
+    "racine": "venire (latin), kuja (swahili)"
+  },
+  {
+    "lingua_vera": "dami",
+    "francais": "donner",
+    "categorie": "verbe",
+    "famille": "universel",
+    "racine": "*deh₃- PIE, kutoa (swahili)"
+  },
+  {
+    "lingua_vera": "vidi",
+    "francais": "voir / regarder",
+    "categorie": "verbe",
+    "famille": "universel",
+    "racine": "videre (latin), kuona (swahili)"
+  },
+  {
+    "lingua_vera": "soni",
+    "francais": "entendre / son",
+    "categorie": "verbe",
+    "famille": "indo-européen",
+    "racine": "sonare (latin), kusikia (swahili)"
+  },
+  {
+    "lingua_vera": "ami",
+    "francais": "aimer",
+    "categorie": "verbe",
+    "famille": "universel",
+    "racine": "amare (latin), kupenda (swahili), ài (mandarin)"
+  },
+  {
+    "lingua_vera": "pari",
+    "francais": "parler",
+    "categorie": "verbe",
+    "famille": "universel",
+    "racine": "parler (fr), kusema (swahili)"
+  },
+  {
+    "lingua_vera": "movi",
+    "francais": "bouger",
+    "categorie": "verbe",
+    "famille": "indo-européen",
+    "racine": "movere (latin)"
+  },
+  {
+    "lingua_vera": "tala",
+    "francais": "comme / tel que",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "tale (latin), kama (swahili)"
+  },
+  {
+    "lingua_vera": "ante",
+    "francais": "avant / pré-",
+    "categorie": "base",
+    "famille": "universel",
+    "racine": "ante (latin), qabl (arabe)"
+  },
+  {
+    "lingua_vera": "vita-luma",
+    "francais": "lumière de vie / le meilleur",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "vita + luma"
+  },
+  {
+    "lingua_vera": "tera-domi",
+    "francais": "monde / univers habité",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "tera + domi"
+  },
+  {
+    "lingua_vera": "tera-fina",
+    "francais": "tombe / fin de terre",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "tera + fina"
+  },
+  {
+    "lingua_vera": "nova-vidi",
+    "francais": "se réveiller / voir à nouveau",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "nova + vidi"
+  },
+  {
+    "lingua_vera": "ki-obseda",
+    "francais": "obsédant / qui hante",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "ki + obseda (latin)"
+  },
+  {
+    "lingua_vera": "tama-vita",
+    "francais": "conviction / croyance profonde",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "tama + vita"
+  },
+  {
+    "lingua_vera": "ante-primus",
+    "francais": "pré-prime / état originel",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "ante + primus"
+  },
+  {
+    "lingua_vera": "maga-pater",
+    "francais": "grand-père",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "maga + pater"
+  },
+  {
+    "lingua_vera": "maga-mater",
+    "francais": "grand-mère",
+    "categorie": "composé",
+    "famille": "universel",
+    "racine": "maga + mater"
+  },
+  {
+    "lingua_vera": "Maris",
+    "francais": "Marie",
+    "categorie": "prénom",
+    "famille": "sémitique",
+    "racine": "hébreu Maryam → mare (mer, pureté)"
+  },
+  {
+    "lingua_vera": "Veni-Sol",
+    "francais": "Jose / Joseph",
+    "categorie": "prénom",
+    "famille": "sémitique",
+    "racine": "hébreu Yosef → celui qui fait venir le soleil"
+  },
+  {
+    "lingua_vera": "Nova-Vita",
+    "francais": "Jean / Yohanan",
+    "categorie": "prénom",
+    "famille": "sémitique",
+    "racine": "hébreu Yohanan → nouvelle vie, don de Dieu"
+  },
+  {
+    "lingua_vera": "Luma-Sol",
+    "francais": "Elena",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "grec Helenē → lumière, éclat solaire"
+  },
+  {
+    "lingua_vera": "Ntu-Kali-Domi",
+    "francais": "Alexandre / Aleandro",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "grec alexein (protéger) + anēr (homme) → gardien des êtres"
+  },
+  {
+    "lingua_vera": "Vidi-Vera",
+    "francais": "Jessica",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "hébreu Yiskah → celle qui voit avec clarté"
+  },
+  {
+    "lingua_vera": "Nala-Ntu",
+    "francais": "Nicolas",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "grec nikē (victoire) + laos (peuple) → réussite pour les êtres"
+  },
+  {
+    "lingua_vera": "Bona-Veni",
+    "francais": "Maeva",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "polynésien ma'eva → bonne venue, bienvenue"
+  },
+  {
+    "lingua_vera": "Dana-Vita",
+    "francais": "Evan",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "gallois Iefan ← hébreu Yohanan → don de vie"
+  },
+  {
+    "lingua_vera": "Vita-Vera",
+    "francais": "Livia",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "latin Livia ← vivere → vraie vivante"
+  },
+  {
+    "lingua_vera": "Nala-Tama",
+    "francais": "Timea",
+    "categorie": "prénom",
+    "famille": "universel",
+    "racine": "grec timē → réussite de l'âme, dignité intérieure"
+  }
 ]
