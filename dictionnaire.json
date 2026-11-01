@@ -1,527 +1,128 @@
+
 [
-  {
-    "lingua_vera": "ma",
-    "francais": "je / moi",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "mama, mi (japonais), mimi (swahili)"
-  },
-  {
-    "lingua_vera": "ta",
-    "francais": "tu / toi",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "tu (latin), thou (anglais), ti (hindi)"
-  },
-  {
-    "lingua_vera": "sa",
-    "francais": "il / elle",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "sa (sanskrit), tā (mandarin)"
-  },
-  {
-    "lingua_vera": "nosa",
-    "francais": "nous",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "no- + sa · sisi (swahili)"
-  },
-  {
-    "lingua_vera": "tasi",
-    "francais": "vous",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "ta + -i · ninyi (swahili)"
-  },
-  {
-    "lingua_vera": "sasi",
-    "francais": "ils / elles",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "sa + -i · wao (swahili)"
-  },
-  {
-    "lingua_vera": "sol",
-    "francais": "soleil",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "sol (latin), surya (sanskrit), jua (swahili)"
-  },
-  {
-    "lingua_vera": "luna",
-    "francais": "lune",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "luna (latin), mwezi (swahili)"
-  },
-  {
-    "lingua_vera": "akva",
-    "francais": "eau",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "aqua (latin), maji (swahili), neer (tamil)"
-  },
-  {
-    "lingua_vera": "tera",
-    "francais": "terre / monde",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "terra (latin), nchi (swahili)"
-  },
-  {
-    "lingua_vera": "vita",
-    "francais": "vie",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "vita (latin), uhai (swahili), jivan (sanskrit)"
-  },
-  {
-    "lingua_vera": "mare",
-    "francais": "mer / océan",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "mare (latin), bahari (swahili), bahr (arabe)"
-  },
-  {
-    "lingua_vera": "domi",
-    "francais": "maison",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "domus (latin), nyumba (swahili), ghar (hindi)"
-  },
-  {
-    "lingua_vera": "pani",
-    "francais": "nourriture / pain",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "panis (latin), chakula (swahili), pān (hindi)"
-  },
-  {
-    "lingua_vera": "tempus",
-    "francais": "temps / moment",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "tempus (latin), wakati (swahili), shí (mandarin)"
-  },
-  {
-    "lingua_vera": "meloda",
-    "francais": "mélodie / chant",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "melodia (grec), wimbo (swahili)"
-  },
-  {
-    "lingua_vera": "prisonus",
-    "francais": "prisonnier / prison",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "prison (latin), jela (swahili)"
-  },
-  {
-    "lingua_vera": "asa",
-    "francais": "fois / occurrence",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "vez (espagnol), mara (swahili)"
-  },
-  {
-    "lingua_vera": "resta",
-    "francais": "reste / ce qui demeure",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "restare (latin), baki (swahili)"
-  },
-  {
-    "lingua_vera": "fina",
-    "francais": "fin / terme",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "finis (latin), mwisho (swahili)"
-  },
-  {
-    "lingua_vera": "luma",
-    "francais": "lueur / lumière intérieure",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "lumen (latin), nuru (swahili)"
-  },
-  {
-    "lingua_vera": "ombra",
-    "francais": "ombre / obscurité",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "umbra (latin), kivuli (swahili)"
-  },
-  {
-    "lingua_vera": "ntu",
-    "francais": "personne / être humain",
-    "categorie": "nom",
-    "famille": "bantu",
-    "racine": "racine *ntu → ubuntu, bantu"
-  },
-  {
-    "lingua_vera": "ubuntu",
-    "francais": "humanité / solidarité",
-    "categorie": "nom",
-    "famille": "bantu",
-    "racine": "zulu : je suis parce que nous sommes"
-  },
-  {
-    "lingua_vera": "ase",
-    "francais": "force / énergie vitale",
-    "categorie": "nom",
-    "famille": "bantu",
-    "racine": "yoruba àṣẹ"
-  },
-  {
-    "lingua_vera": "nala",
-    "francais": "réussite / abondance",
-    "categorie": "nom",
-    "famille": "bantu",
-    "racine": "swahili/zulu nala"
-  },
-  {
-    "lingua_vera": "pendo",
-    "francais": "affection / tendresse",
-    "categorie": "nom",
-    "famille": "bantu",
-    "racine": "swahili pendo"
-  },
-  {
-    "lingua_vera": "tama",
-    "francais": "âme / désir / aspiration",
-    "categorie": "nom",
-    "famille": "sino",
-    "racine": "japonais tama"
-  },
-  {
-    "lingua_vera": "ki",
-    "francais": "énergie / souffle vital",
-    "categorie": "nom",
-    "famille": "sino",
-    "racine": "mandarin qì, japonais ki"
-  },
-  {
-    "lingua_vera": "zen",
-    "francais": "calme / paix intérieure",
-    "categorie": "nom",
-    "famille": "sino",
-    "racine": "japonais zen ← sanskrit dhyāna"
-  },
-  {
-    "lingua_vera": "dana",
-    "francais": "don / générosité",
-    "categorie": "nom",
-    "famille": "dravidien",
-    "racine": "sanskrit dāna, tamil dana"
-  },
-  {
-    "lingua_vera": "karma",
-    "francais": "action / conséquence",
-    "categorie": "nom",
-    "famille": "dravidien",
-    "racine": "sanskrit karma"
-  },
-  {
-    "lingua_vera": "deva",
-    "francais": "divin / lumière céleste",
-    "categorie": "nom",
-    "famille": "dravidien",
-    "racine": "sanskrit deva, tamil teyvam"
-  },
-  {
-    "lingua_vera": "pater",
-    "francais": "père",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "PIE *ph₂tḗr → latin pater, sanskrit pitā, grec patḗr, swahili baba"
-  },
-  {
-    "lingua_vera": "mater",
-    "francais": "mère",
-    "categorie": "nom",
-    "famille": "universel",
-    "racine": "PIE *méh₂tēr → latin mater, sanskrit mātā, grec mḗtēr, tamoul mātar"
-  },
-  {
-    "lingua_vera": "bona",
-    "francais": "bon / bien",
-    "categorie": "adjectif",
-    "famille": "indo-européen",
-    "racine": "bonus (latin), bhala (zulu)"
-  },
-  {
-    "lingua_vera": "mala",
-    "francais": "mauvais / mal",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "malus (latin), mbaya (swahili)"
-  },
-  {
-    "lingua_vera": "nova",
-    "francais": "nouveau",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "novus (latin), mpya (swahili)"
-  },
-  {
-    "lingua_vera": "maga",
-    "francais": "grand",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "magnus (latin), kubwa (swahili), dà (mandarin)"
-  },
-  {
-    "lingua_vera": "mina",
-    "francais": "petit",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "minimus (latin), ndogo (swahili)"
-  },
-  {
-    "lingua_vera": "vera",
-    "francais": "vrai / réel",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "vera (latin)"
-  },
-  {
-    "lingua_vera": "soli",
-    "francais": "seul / solitaire",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "solus (latin), peke (swahili)"
-  },
-  {
-    "lingua_vera": "safi",
-    "francais": "propre / pur",
-    "categorie": "adjectif",
-    "famille": "bantu",
-    "racine": "swahili safi"
-  },
-  {
-    "lingua_vera": "kali",
-    "francais": "fort / intense",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "swahili kali, kāla (sanskrit)"
-  },
-  {
-    "lingua_vera": "zuri",
-    "francais": "beau / magnifique",
-    "categorie": "adjectif",
-    "famille": "bantu",
-    "racine": "swahili zuri"
-  },
-  {
-    "lingua_vera": "primus",
-    "francais": "premier / essentiel",
-    "categorie": "adjectif",
-    "famille": "universel",
-    "racine": "primus (latin), kwanza (swahili)"
-  },
-  {
-    "lingua_vera": "veni",
-    "francais": "venir",
-    "categorie": "verbe",
-    "famille": "universel",
-    "racine": "venire (latin), kuja (swahili)"
-  },
-  {
-    "lingua_vera": "dami",
-    "francais": "donner",
-    "categorie": "verbe",
-    "famille": "universel",
-    "racine": "*deh₃- PIE, kutoa (swahili)"
-  },
-  {
-    "lingua_vera": "vidi",
-    "francais": "voir / regarder",
-    "categorie": "verbe",
-    "famille": "universel",
-    "racine": "videre (latin), kuona (swahili)"
-  },
-  {
-    "lingua_vera": "soni",
-    "francais": "entendre / son",
-    "categorie": "verbe",
-    "famille": "indo-européen",
-    "racine": "sonare (latin), kusikia (swahili)"
-  },
-  {
-    "lingua_vera": "ami",
-    "francais": "aimer",
-    "categorie": "verbe",
-    "famille": "universel",
-    "racine": "amare (latin), kupenda (swahili), ài (mandarin)"
-  },
-  {
-    "lingua_vera": "pari",
-    "francais": "parler",
-    "categorie": "verbe",
-    "famille": "universel",
-    "racine": "parler (fr), kusema (swahili)"
-  },
-  {
-    "lingua_vera": "movi",
-    "francais": "bouger",
-    "categorie": "verbe",
-    "famille": "indo-européen",
-    "racine": "movere (latin)"
-  },
-  {
-    "lingua_vera": "tala",
-    "francais": "comme / tel que",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "tale (latin), kama (swahili)"
-  },
-  {
-    "lingua_vera": "ante",
-    "francais": "avant / pré-",
-    "categorie": "base",
-    "famille": "universel",
-    "racine": "ante (latin), qabl (arabe)"
-  },
-  {
-    "lingua_vera": "vita-luma",
-    "francais": "lumière de vie / le meilleur",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "vita + luma"
-  },
-  {
-    "lingua_vera": "tera-domi",
-    "francais": "monde / univers habité",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "tera + domi"
-  },
-  {
-    "lingua_vera": "tera-fina",
-    "francais": "tombe / fin de terre",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "tera + fina"
-  },
-  {
-    "lingua_vera": "nova-vidi",
-    "francais": "se réveiller / voir à nouveau",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "nova + vidi"
-  },
-  {
-    "lingua_vera": "ki-obseda",
-    "francais": "obsédant / qui hante",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "ki + obseda (latin)"
-  },
-  {
-    "lingua_vera": "tama-vita",
-    "francais": "conviction / croyance profonde",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "tama + vita"
-  },
-  {
-    "lingua_vera": "ante-primus",
-    "francais": "pré-prime / état originel",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "ante + primus"
-  },
-  {
-    "lingua_vera": "maga-pater",
-    "francais": "grand-père",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "maga + pater"
-  },
-  {
-    "lingua_vera": "maga-mater",
-    "francais": "grand-mère",
-    "categorie": "composé",
-    "famille": "universel",
-    "racine": "maga + mater"
-  },
-  {
-    "lingua_vera": "Maris",
-    "francais": "Marie",
-    "categorie": "prénom",
-    "famille": "sémitique",
-    "racine": "hébreu Maryam → mare (mer, pureté)"
-  },
-  {
-    "lingua_vera": "Veni-Sol",
-    "francais": "Jose / Joseph",
-    "categorie": "prénom",
-    "famille": "sémitique",
-    "racine": "hébreu Yosef → celui qui fait venir le soleil"
-  },
-  {
-    "lingua_vera": "Nova-Vita",
-    "francais": "Jean / Yohanan",
-    "categorie": "prénom",
-    "famille": "sémitique",
-    "racine": "hébreu Yohanan → nouvelle vie, don de Dieu"
-  },
-  {
-    "lingua_vera": "Luma-Sol",
-    "francais": "Elena",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "grec Helenē → lumière, éclat solaire"
-  },
-  {
-    "lingua_vera": "Ntu-Kali-Domi",
-    "francais": "Alexandre / Aleandro",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "grec alexein (protéger) + anēr (homme) → gardien des êtres"
-  },
-  {
-    "lingua_vera": "Vidi-Vera",
-    "francais": "Jessica",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "hébreu Yiskah → celle qui voit avec clarté"
-  },
-  {
-    "lingua_vera": "Nala-Ntu",
-    "francais": "Nicolas",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "grec nikē (victoire) + laos (peuple) → réussite pour les êtres"
-  },
-  {
-    "lingua_vera": "Bona-Veni",
-    "francais": "Maeva",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "polynésien ma'eva → bonne venue, bienvenue"
-  },
-  {
-    "lingua_vera": "Dana-Vita",
-    "francais": "Evan",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "gallois Iefan ← hébreu Yohanan → don de vie"
-  },
-  {
-    "lingua_vera": "Vita-Vera",
-    "francais": "Livia",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "latin Livia ← vivere → vraie vivante"
-  },
-  {
-    "lingua_vera": "Nala-Tama",
-    "francais": "Timea",
-    "categorie": "prénom",
-    "famille": "universel",
-    "racine": "grec timē → réussite de l'âme, dignité intérieure"
-  }
+ {"francais":"je","lingua_vera":"mi","categorie":"pronom","definition":"moi, première personne"},
+ {"francais":"tu","lingua_vera":"tu","categorie":"pronom","definition":"toi, deuxième personne"},
+ {"francais":"il / elle","lingua_vera":"sa","categorie":"pronom","definition":"lui, elle, troisième personne"},
+ {"francais":"nous","lingua_vera":"mina","categorie":"pronom","definition":"nous, pluriel de mi"},
+ {"francais":"vous","lingua_vera":"tuna","categorie":"pronom","definition":"vous, pluriel de tu"},
+ {"francais":"ils / elles","lingua_vera":"sana","categorie":"pronom","definition":"eux, elles, pluriel de sa"},
+ {"francais":"et","lingua_vera":"ka","categorie":"conjonction","definition":"relie deux choses"},
+ {"francais":"ou","lingua_vera":"ya","categorie":"conjonction","definition":"choix entre deux choses"},
+ {"francais":"mais","lingua_vera":"ba","categorie":"conjonction","definition":"opposition"},
+ {"francais":"parce que","lingua_vera":"pu","categorie":"conjonction","definition":"cause"},
+ {"francais":"si","lingua_vera":"ifa","categorie":"conjonction","definition":"condition"},
+ {"francais":"oui","lingua_vera":"na","categorie":"adverbe","definition":"accord"},
+ {"francais":"non","lingua_vera":"ma","categorie":"adverbe","definition":"refus, négation"},
+ {"francais":"très","lingua_vera":"mega","categorie":"adverbe","definition":"intensité forte"},
+ {"francais":"beaucoup","lingua_vera":"poli","categorie":"adverbe","definition":"grande quantité"},
+ {"francais":"peu","lingua_vera":"mika","categorie":"adverbe","definition":"petite quantité"},
+ {"francais":"ici","lingua_vera":"hi","categorie":"adverbe","definition":"ce lieu-ci"},
+ {"francais":"là","lingua_vera":"la","categorie":"adverbe","definition":"ce lieu-là"},
+ {"francais":"maintenant","lingua_vera":"nu","categorie":"adverbe","definition":"en ce moment"},
+ {"francais":"toujours","lingua_vera":"sempa","categorie":"adverbe","definition":"tout le temps"},
+ {"francais":"jamais","lingua_vera":"ma-sempa","categorie":"adverbe","definition":"à aucun moment"},
+ {"francais":"être","lingua_vera":"esa","categorie":"verbe","definition":"exister, être"},
+ {"francais":"avoir","lingua_vera":"habe","categorie":"verbe","definition":"posséder"},
+ {"francais":"faire","lingua_vera":"kara","categorie":"verbe","definition":"accomplir, fabriquer"},
+ {"francais":"aller","lingua_vera":"iba","categorie":"verbe","definition":"se déplacer vers"},
+ {"francais":"venir","lingua_vera":"veni","categorie":"verbe","definition":"arriver vers ici"},
+ {"francais":"dire","lingua_vera":"dika","categorie":"verbe","definition":"énoncer"},
+ {"francais":"voir","lingua_vera":"vida","categorie":"verbe","definition":"percevoir par les yeux"},
+ {"francais":"savoir","lingua_vera":"sapa","categorie":"verbe","definition":"connaître, comprendre"},
+ {"francais":"pouvoir","lingua_vera":"poda","categorie":"verbe","definition":"être capable"},
+ {"francais":"vouloir","lingua_vera":"vola","categorie":"verbe","definition":"désirer"},
+ {"francais":"prendre","lingua_vera":"kapa","categorie":"verbe","definition":"saisir"},
+ {"francais":"donner","lingua_vera":"dona","categorie":"verbe","definition":"offrir"},
+ {"francais":"manger","lingua_vera":"mana","categorie":"verbe","definition":"se nourrir"},
+ {"francais":"boire","lingua_vera":"bibe","categorie":"verbe","definition":"avaler un liquide"},
+ {"francais":"dormir","lingua_vera":"somna","categorie":"verbe","definition":"se reposer la nuit"},
+ {"francais":"aimer","lingua_vera":"amara","categorie":"verbe","definition":"éprouver de l'affection"},
+ {"francais":"parler","lingua_vera":"lala","categorie":"verbe","definition":"utiliser la voix"},
+ {"francais":"entendre","lingua_vera":"audi","categorie":"verbe","definition":"percevoir par l'oreille"},
+ {"francais":"penser","lingua_vera":"mena","categorie":"verbe","definition":"réfléchir"},
+ {"francais":"vivre","lingua_vera":"viva","categorie":"verbe","definition":"être en vie"},
+ {"francais":"mourir","lingua_vera":"mora","categorie":"verbe","definition":"cesser de vivre"},
+ {"francais":"marcher","lingua_vera":"pada","categorie":"verbe","definition":"avancer à pied"},
+ {"francais":"écrire","lingua_vera":"grafa","categorie":"verbe","definition":"tracer des signes"},
+ {"francais":"lire","lingua_vera":"lega","categorie":"verbe","definition":"déchiffrer des signes"},
+ {"francais":"apprendre","lingua_vera":"dida","categorie":"verbe","definition":"acquérir un savoir"},
+ {"francais":"travailler","lingua_vera":"laba","categorie":"verbe","definition":"exercer un effort"},
+ {"francais":"ouvrir","lingua_vera":"apra","categorie":"verbe","definition":"rendre accessible"},
+ {"francais":"fermer","lingua_vera":"klusa","categorie":"verbe","definition":"rendre inaccessible"},
+ {"francais":"homme","lingua_vera":"vira","categorie":"nom","definition":"être humain masculin"},
+ {"francais":"femme","lingua_vera":"mulia","categorie":"nom","definition":"être humain féminin"},
+ {"francais":"enfant","lingua_vera":"kinda","categorie":"nom","definition":"jeune être humain"},
+ {"francais":"personne","lingua_vera":"homa","categorie":"nom","definition":"être humain"},
+ {"francais":"ami","lingua_vera":"filo","categorie":"nom","definition":"personne proche et aimée"},
+ {"francais":"père","lingua_vera":"pater","categorie":"nom","definition":"parent masculin"},
+ {"francais":"mère","lingua_vera":"mater","categorie":"nom","definition":"parent féminin"},
+ {"francais":"eau","lingua_vera":"aqua","categorie":"nom","definition":"liquide de vie"},
+ {"francais":"feu","lingua_vera":"pira","categorie":"nom","definition":"chaleur et lumière"},
+ {"francais":"terre","lingua_vera":"tera","categorie":"nom","definition":"sol, planète"},
+ {"francais":"air","lingua_vera":"vata","categorie":"nom","definition":"souffle, vent"},
+ {"francais":"soleil","lingua_vera":"sol","categorie":"nom","definition":"étoile du jour"},
+ {"francais":"lune","lingua_vera":"luma","categorie":"nom","definition":"astre de la nuit"},
+ {"francais":"étoile","lingua_vera":"stela","categorie":"nom","definition":"point de lumière du ciel"},
+ {"francais":"ciel","lingua_vera":"kela","categorie":"nom","definition":"espace au-dessus de nous"},
+ {"francais":"jour","lingua_vera":"dia","categorie":"nom","definition":"temps de lumière"},
+ {"francais":"nuit","lingua_vera":"nokta","categorie":"nom","definition":"temps d'obscurité"},
+ {"francais":"temps","lingua_vera":"kala","categorie":"nom","definition":"durée, moment"},
+ {"francais":"année","lingua_vera":"anua","categorie":"nom","definition":"un tour du soleil"},
+ {"francais":"maison","lingua_vera":"domi","categorie":"nom","definition":"lieu où l'on habite"},
+ {"francais":"ville","lingua_vera":"urba","categorie":"nom","definition":"grand lieu d'habitation"},
+ {"francais":"pays","lingua_vera":"nata","categorie":"nom","definition":"territoire d'un peuple"},
+ {"francais":"monde","lingua_vera":"munda","categorie":"nom","definition":"ensemble de tout ce qui existe"},
+ {"francais":"main","lingua_vera":"manu","categorie":"nom","definition":"partie du bras"},
+ {"francais":"tête","lingua_vera":"kapu","categorie":"nom","definition":"partie du corps avec le visage"},
+ {"francais":"cœur","lingua_vera":"kora","categorie":"nom","definition":"organe et siège des émotions"},
+ {"francais":"œil","lingua_vera":"oka","categorie":"nom","definition":"organe de la vue"},
+ {"francais":"nom (prénom)","lingua_vera":"nomi","categorie":"nom","definition":"mot qui désigne quelqu'un"},
+ {"francais":"mot","lingua_vera":"verba","categorie":"nom","definition":"unité de langage"},
+ {"francais":"langue","lingua_vera":"lingua","categorie":"nom","definition":"langage, organe de la parole"},
+ {"francais":"vie","lingua_vera":"vita","categorie":"nom","definition":"état d'être vivant"},
+ {"francais":"mort","lingua_vera":"morta","categorie":"nom","definition":"fin de la vie"},
+ {"francais":"chose","lingua_vera":"reta","categorie":"nom","definition":"objet, élément"},
+ {"francais":"travail","lingua_vera":"labu","categorie":"nom","definition":"activité, effort"},
+ {"francais":"nourriture","lingua_vera":"alima","categorie":"nom","definition":"ce que l'on mange"},
+ {"francais":"pain","lingua_vera":"pana","categorie":"nom","definition":"aliment de base"},
+ {"francais":"arbre","lingua_vera":"arbo","categorie":"nom","definition":"grand végétal"},
+ {"francais":"animal","lingua_vera":"anima","categorie":"nom","definition":"être vivant non humain"},
+ {"francais":"chemin","lingua_vera":"via","categorie":"nom","definition":"voie, route"},
+ {"francais":"paix","lingua_vera":"pasa","categorie":"nom","definition":"absence de guerre"},
+ {"francais":"amour","lingua_vera":"amora","categorie":"nom","definition":"affection profonde"},
+ {"francais":"vérité","lingua_vera":"vera","categorie":"nom","definition":"ce qui est vrai"},
+ {"francais":"lumière","lingua_vera":"luka","categorie":"nom","definition":"clarté"},
+ {"francais":"grand","lingua_vera":"maga","categorie":"adjectif","definition":"de grande taille"},
+ {"francais":"petit","lingua_vera":"mini","categorie":"adjectif","definition":"de petite taille"},
+ {"francais":"bon","lingua_vera":"bona","categorie":"adjectif","definition":"qui est bien"},
+ {"francais":"mauvais","lingua_vera":"mala","categorie":"adjectif","definition":"qui est mal"},
+ {"francais":"nouveau","lingua_vera":"nova","categorie":"adjectif","definition":"récent"},
+ {"francais":"vieux","lingua_vera":"vetu","categorie":"adjectif","definition":"ancien"},
+ {"francais":"beau","lingua_vera":"bela","categorie":"adjectif","definition":"agréable à voir"},
+ {"francais":"vrai","lingua_vera":"vera","categorie":"adjectif","definition":"conforme à la réalité"},
+ {"francais":"chaud","lingua_vera":"kalda","categorie":"adjectif","definition":"de haute température"},
+ {"francais":"froid","lingua_vera":"frida","categorie":"adjectif","definition":"de basse température"},
+ {"francais":"long","lingua_vera":"longa","categorie":"adjectif","definition":"de grande longueur"},
+ {"francais":"fort","lingua_vera":"forta","categorie":"adjectif","definition":"puissant"},
+ {"francais":"heureux","lingua_vera":"feli","categorie":"adjectif","definition":"content, joyeux"},
+ {"francais":"tout","lingua_vera":"toda","categorie":"adjectif","definition":"l'ensemble"},
+ {"francais":"un","lingua_vera":"uni","categorie":"nombre","definition":"1"},
+ {"francais":"deux","lingua_vera":"duo","categorie":"nombre","definition":"2"},
+ {"francais":"trois","lingua_vera":"tri","categorie":"nombre","definition":"3"},
+ {"francais":"quatre","lingua_vera":"kwara","categorie":"nombre","definition":"4"},
+ {"francais":"cinq","lingua_vera":"penta","categorie":"nombre","definition":"5"},
+ {"francais":"dix","lingua_vera":"deka","categorie":"nombre","definition":"10"},
+ {"francais":"cent","lingua_vera":"kenta","categorie":"nombre","definition":"100"},
+ {"francais":"qui","lingua_vera":"kwi","categorie":"interrogatif","definition":"question sur la personne"},
+ {"francais":"quoi","lingua_vera":"kwa","categorie":"interrogatif","definition":"question sur la chose"},
+ {"francais":"où","lingua_vera":"ubi","categorie":"interrogatif","definition":"question sur le lieu"},
+ {"francais":"quand","lingua_vera":"kwan","categorie":"interrogatif","definition":"question sur le temps"},
+ {"francais":"pourquoi","lingua_vera":"kwapu","categorie":"interrogatif","definition":"question sur la cause"},
+ {"francais":"comment","lingua_vera":"kwamo","categorie":"interrogatif","definition":"question sur la manière"},
+ {"francais":"bonjour","lingua_vera":"bona-dia","categorie":"salutation","definition":"salut du jour"},
+ {"francais":"bonsoir","lingua_vera":"bona-vespa","categorie":"salutation","definition":"salut du soir"},
+ {"francais":"merci","lingua_vera":"gratia","categorie":"salutation","definition":"remerciement"},
+ {"francais":"s'il vous plaît","lingua_vera":"pleka","categorie":"salutation","definition":"demande polie"},
+ {"francais":"au revoir","lingua_vera":"ba-vida","categorie":"salutation","definition":"à bientôt"},
+ {"francais":"pardon","lingua_vera":"venia","categorie":"salutation","definition":"excuse"}
 ]
